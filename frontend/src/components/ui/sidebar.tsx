@@ -112,7 +112,7 @@ const Logo = () => {
   
   return (
     <button 
-      onClick={() => window.location.href = 'http://localhost:3000'}
+      onClick={() => window.location.href = `${process.env.NEXT_PUBLIC_APP_URL}`}
       className="h-16 relative flex items-center justify-center md:justify-start focus:outline-none"
     >
       <motion.div 
