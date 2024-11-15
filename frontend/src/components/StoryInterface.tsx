@@ -75,7 +75,7 @@ const StoryInterface = () => {
     setIsPromptAtBottom(true);
 
     try {
-      const response = await axios.post('http://localhost:8000/generate_story', {
+      const response = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}`, {
         prompt: prompt.trim(),
         max_length: 256,
         temperature: creativity
