@@ -7,7 +7,6 @@ import { useEffect } from "react";
 export const TypewriterEffect = ({
   words,
   className,
-  cursorClassName,
 }: {
   words: {
     text: string;
@@ -84,7 +83,6 @@ export const TypewriterEffect = ({
 export const TypewriterEffectSmooth = ({
   words,
   className,
-  cursorClassName,
 }: {
   words: {
     text: string;
