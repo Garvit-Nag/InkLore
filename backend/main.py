@@ -1,7 +1,17 @@
 from fastapi import FastAPI
-from app.api.routes import router  # Import router directly, not as string
+from fastapi.middleware.cors import CORSMiddleware
+from app.api.routes import router
 
 app = FastAPI(title="Story Generator API")
+
+# Add CORS middleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Include the router
 app.include_router(router)
