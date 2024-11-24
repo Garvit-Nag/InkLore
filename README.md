@@ -1,6 +1,6 @@
 # InkLore 🌟
 <div align="center">
-  <img src="./public/icon.png" alt="InkLore Logo" width="400" height="auto">
+  <img src="frontend/public/icon.png" alt="InkLore Logo" width="400" height="auto">
 </div>
 An AI-powered story generation system that creates unique narratives from user prompts.
 
