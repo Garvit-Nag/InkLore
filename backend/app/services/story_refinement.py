@@ -6,7 +6,7 @@ from app.core.config import settings
 
 # Configure Gemini API
 genai.configure(api_key=settings.GOOGLE_API_KEY)
-gemini_model = genai.GenerativeModel('gemini-1.5-flash')
+gemini_model = genai.GenerativeModel('gemini-2.5-flash')
 
 def clean_text(story: str) -> str:
     """Clean and normalize the generated text"""
